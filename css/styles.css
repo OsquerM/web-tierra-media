@@ -10,8 +10,12 @@
 body {
     background-color: #121212; /* Fondo casi negro estilo cinematográfico */
     color: #e0d9ca;            /* Texto gris claro/crema, muy suave para la vista */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lora', Georgia, serif;
     line-height: 1.6;
+}
+h1, h2, h3, h4, nav a {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px; /* Añade un espacio elegante entre las letras */
 }
 
 /* ==========================================================================
