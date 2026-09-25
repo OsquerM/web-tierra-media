@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crónicas de la Tierra Media | Lore y Coleccionismo de Tolkien</title>
-        <!-- Fuentes de Google Fonts: Cinzel y Lora -->
+    <!-- Fuentes de Google Fonts: Cinzel y Lora -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Cinzel:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
     <!-- Enlazamos el archivo de estilos que crearemos después -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- CABECERA: El título principal de la web -->
+    <!-- CABECERA: Logo con escudo y Menú de navegación funcional -->
     <header>
-        <div class="logo">
-            <h1>⚔️ Crónicas de la Tierra Media ⚔️</h1>
-            <p>El portal definitivo para los apasionados del universo de J.R.R. Tolkien</p>
+        <div class="logo-contenedor">
+            <!-- Imagen del escudo heráldico -->
+            <img src="imagenes/escudo.png" alt="Escudo de la Tierra Media" class="imagen-escudo">
+            <div class="texto-logo">
+                <h1>⚔️ Crónicas de la Tierra Media ⚔️</h1>
+                <p>El portal definitivo para los apasionados del universo de J.R.R. Tolkien</p>
+            </div>
         </div>
-        <!-- Menú de navegación para movernos por la web -->
+        
+        <!-- Menú de navegación que apunta a las secciones de la página -->
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -30,6 +35,7 @@
             </ul>
         </nav>
     </header>
+
 
     <!-- CONTENIDO PRINCIPAL -->
     <main>
@@ -56,7 +62,7 @@
                     <h3>🦅 El Misterio de las Águilas</h3>
                     <img src="imagenes/montana.jpg" alt="Montañas nubladas épicas" class="imagen-tarjeta">
                     <p>Analizamos de forma definitiva la pregunta más repetida: ¿Por qué las Grandes Águilas de Manwë no volaron directamente hacia el Monte del Destino?</p>
-                    <a href="#" class="boton">Leer Debate</a>
+                    <a href="lore.html" class="boton">Leer Debate</a>
                 </article>
             </div>
         </section>
@@ -79,6 +85,25 @@
                     <p>Para los que buscan la mitología profunda y la creación de los Silmarils.</p>
                     <span class="precio">Nivel Avanzado 🔥</span>
                     <a href="#" class="boton-comprar">Ver en Amazon</a>
+                </div>
+            </div>
+        </section>
+        <!-- SECCIÓN 4: COLECCIONISMO Y MERCHANDISING -->
+        <section id="coleccionismo" class="contenedor-seccion">
+            <h2>🏆 Réplicas y Coleccionismo de la Tierra Media</h2>
+            <p>Explora los objetos más icónicos y las réplicas oficiales de las películas para decorar tu propio rincón de la Comarca:</p>
+            <div class="rejilla-productos">
+                <div class="producto">
+                    <h4>Andúril: La Llama del Oeste</h4>
+                    <p>Réplica oficial a escala de la espada del Rey Aragorn, forjada a partir de los fragmentos de Narsil.</p>
+                    <span class="precio">Objeto de Culto 🗡️</span>
+                    <a href="#" class="boton">Ver Detalles</a>
+                </div>
+                <div class="producto">
+                    <h4>La Llave de Erebor</h4>
+                    <p>Imprescindible réplica de la llave utilizada por Thorin Escudo de Roble para abrir la puerta secreta de la Montaña Solitaria.</p>
+                    <span class="precio">Edición Limitada 🗝️</span>
+                    <a href="#" class="boton">Ver Detalles</a>
                 </div>
             </div>
         </section>

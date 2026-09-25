@@ -1,0 +1,271 @@
+/* ==========================================================================
+   1. CONFIGURACIÓN GENERAL Y COLORES DE LA TIERRA MEDIA
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; /* Hace que el salto entre secciones sea fluido y no de golpe */
+}
+
+body {
+    background-color: #121212; /* Fondo casi negro estilo cinematográfico */
+    color: #e0d9ca;            /* Texto gris claro/crema, muy suave para la vista */
+    font-family: 'Lora', Georgia, serif;
+    line-height: 1.6;
+}
+h1, h2, h3, h4, nav a {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px; /* Añade un espacio elegante entre las letras */
+}
+
+/* ==========================================================================
+   2. CABECERA (HEADER) Y MENÚ DE NAVEGACIÓN
+   ========================================================================== */
+header {
+    background-color: #1a1a1a;
+    border-bottom: 3px solid #d4af37; /* Línea dorada estilo El Anillo Único */
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    color: #d4af37; /* Dorado real */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+header p {
+    color: #aaa;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1.5rem;
+}
+
+nav a {
+    color: #e0d9ca;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4af37; /* Cambia a dorado al pasar el ratón */
+}
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Separación entre el escudo y el texto del título */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.imagen-escudo {
+    width: 70px;        /* Tamaño ideal para que acompañe al título */
+    height: auto;
+    filter: drop-shadow(0px 0px 8px rgba(212, 175, 55, 0.5)); /* Le da un brillo dorado sutil */
+}
+
+/* ==========================================================================
+   3. CONTENIDO PRINCIPAL Y SECCIONES
+   ========================================================================== */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.hero-section {
+    background-color: #1c1a17; /* Tono marrón muy oscuro, como madera o roca */
+    border-left: 5px solid #d4af37;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+}
+
+.hero-section h2 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+}
+
+.contenedor-seccion {
+    margin-bottom: 4rem;
+}
+
+.contenedor-seccion h2 {
+    color: #d4af37;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Rejillas para organizar tarjetas y productos en columnas */
+.rejilla-articulos, .rejilla-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* ==========================================================================
+   4. TARJETAS DE LORE Y PRODUCTOS (AFILIACIÓN)
+   ========================================================================== */
+.tarjeta, .producto {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.tarjeta:hover, .producto:hover {
+    transform: translateY(-5px); /* Pequeño salto hacia arriba al pasar el ratón */
+    border-color: #d4af37;
+}
+
+.tarjeta h3, .producto h4 {
+    color: #fff;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.precio {
+    display: inline-block;
+    color: #d4af37;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+/* ==========================================================================
+   5. BOTONES DE ACCIÓN
+   ========================================================================== */
+.boton, .boton-comprar {
+    display: inline-block;
+    text-align: center;
+    background-color: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.boton:hover, .boton-comprar:hover {
+    background-color: #d4af37;
+    color: #121212; /* Invierte colores al pasar el ratón */
+}
+
+/* ==========================================================================
+   6. PIE DE PÁGINA (FOOTER)
+   ========================================================================== */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #333;
+}
+/* ==========================================================================
+   7. CONTROL DE IMÁGENES
+   ========================================================================== */
+.imagen-tarjeta, .imagen-producto {
+    width: 100%;             /* Ocupa todo el ancho disponible de la tarjeta */
+    height: 250px;           /* Forzamos a que TODAS las imágenes midan exactamente esto de alto */
+    object-fit: contain;     /* Muestra la imagen COMPLETA sin recortar un solo pixel */
+    background-color: #161616; /* Crea un fondo oscuro detrás de la foto para rellenar espacios libres */
+    border-radius: 6px;      /* Bordes ligeramente redondeados */
+    margin-bottom: 1.5rem;   /* Espacio limpio con el texto de abajo */
+    border: 1px solid #2a2a2a; /* Un borde sutil que enmarca la foto */
+    padding: 5px;            /* Pequeña separación interna elegante */
+}
+/* ==========================================================================
+   8. DISEÑO DE ARTÍCULOS COMPLETOS (LORE)
+   ========================================================================== */
+.articulo-completo {
+    max-width: 800px; /* Un ancho más estrecho para facilitar la lectura de textos largos */
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    border: 1px solid #2a2a2a;
+    margin-top: 2rem;
+}
+
+.categoria {
+    color: #d4af37;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.articulo-completo h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 0.5rem 0 2rem 0;
+    line-height: 1.3;
+}
+
+.imagen-encabezado-articulo {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    border: 1px solid #333;
+}
+
+.cuerpo-texto p {
+    font-size: 1.15rem;
+    margin-bottom: 1.8rem;
+    color: #e0d9ca;
+    text-align: justify;
+}
+
+.cuerpo-texto h3 {
+    color: #d4af37;
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1rem 0;
+}
+
+.conclusion {
+    background-color: #121212;
+    padding: 1.5rem;
+    border-left: 3px solid #d4af37;
+    font-style: italic;
+    border-radius: 4px;
+}
+
+.boton-volver {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #aaa;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.boton-volver:hover {
+    color: #d4af37;
+}
