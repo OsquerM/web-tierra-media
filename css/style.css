@@ -269,3 +269,32 @@ footer {
 .boton-volver:hover {
     color: #d4af37;
 }
+/* ==========================================================================
+   9. BOTÓN VOLVER ARRIBA (BACK TO TOP)
+   ========================================================================== */
+.boton-subir {
+    position: fixed;         /* Se queda flotando fijo en la pantalla */
+    bottom: 30px;            /* Distancia desde abajo de la pantalla */
+    right: 30px;             /* Distancia desde la derecha de la pantalla */
+    width: 50px;             /* Ancho del círculo */
+    height: 50px;            /* Alto del círculo */
+    background-color: #1a1a1a;
+    color: #d4af37;          /* Flecha en color dorado */
+    border: 2px solid #d4af37;
+    border-radius: 50px;     /* Forzamos a que sea un círculo perfecto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;       /* Tamaño de la flecha ↑ */
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1000;           /* Asegura que flote por ENCIMA de las imágenes y textos */
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra sutil para darle profundidad */
+}
+
+.boton-subir:hover {
+    background-color: #d4af37;
+    color: #121212;          /* Invierte los colores al pasar el ratón */
+    transform: translateY(-5px); /* Pequeño salto hacia arriba de animación */
+}
