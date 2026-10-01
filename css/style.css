@@ -298,3 +298,31 @@ footer {
     color: #121212;          /* Invierte los colores al pasar el ratón */
     transform: translateY(-5px); /* Pequeño salto hacia arriba de animación */
 }
+/* ==========================================================================
+   10. RECUADROS DE AVISO / "SABÍAS QUE..."
+   ========================================================================== */
+.caja-curiosidad {
+    background-color: #1e1b15;       /* Tono marrón/pergamino muy oscuro */
+    border-left: 4px solid #d4af37;  /* Línea dorada gruesa a la izquierda */
+    padding: 1.5rem;                 /* Espaciado interno para el texto */
+    border-radius: 4px;              /* Bordes ligeramente suaves */
+    margin: 2rem 0;                  /* Separación con los párrafos de arriba y abajo */
+    border: 1px solid #332a15;       /* Borde sutil oscuro en el resto de lados */
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5); /* Sombra interna para dar profundidad */
+}
+
+.caja-curiosidad h4 {
+    color: #d4af37;                  /* Título en dorado */
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;                       /* Separación con el emoji */
+}
+
+.caja-curiosidad p {
+    font-style: italic;              /* Texto en cursiva elegante */
+    font-size: 1.05rem !important;   /* Ajuste de tamaño limpio */
+    color: #cccbc4 !important;       /* Color crema suave */
+    margin-bottom: 0 !important;     /* Evitamos márgenes raros al final */
+}
