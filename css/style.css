@@ -326,3 +326,21 @@ footer {
     color: #cccbc4 !important;       /* Color crema suave */
     margin-bottom: 0 !important;     /* Evitamos márgenes raros al final */
 }
+/* ==========================================================================
+   11. PREPARACIÓN PARA ANUNCIOS LATERALES (OPCIONAL)
+   ========================================================================== */
+.contenedor-con-anuncios {
+    display: grid;
+    grid-template-columns: 1fr 250px; /* Columna principal para el lore + 250px para el banner */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* En teléfonos móviles, los anuncios a los lados molestan, 
+   así que los mandamos abajo automáticamente */
+@media (max-width: 900px) {
+    .contenedor-con-anuncios {
+        grid-template-columns: 1fr;
+    }
+}
